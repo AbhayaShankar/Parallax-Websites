@@ -1,0 +1,99 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+  color: #666;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  opacity: 0.75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url(./restaurant.jpg);
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url(./food.jpg);
+  min-height: 650px;
+}
+
+.pimg3 {
+  background-image: url(./bra.jpg);
+  min-height: 650px;
+}
+
+.pimg4 {
+  background-image: url(./chef.jpg);
+  min-height: 80%;
+  object-fit: scale-down;
+}
+
+section {
+  text-align: center;
+  padding: 30px 70px;
+}
+
+.section-dark {
+  background-color: rgb(28, 28, 28);
+  color: #f4f4f4;
+}
+
+.section-light span {
+  color: black;
+  z-index: 2;
+  font-weight: 600;
+}
+
+p {
+  line-height: 35px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #dc5f00;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 8px 10px rgb(2, 2, 2);
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.ptext .border span {
+  color: black;
+  text-shadow: 5px 8px 10px rgb(255, 255, 255);
+  z-index: 2;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4 {
+    background-attachment: scroll;
+  }
+}
